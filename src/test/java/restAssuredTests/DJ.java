@@ -23,11 +23,11 @@ public class DJ {
 	@BeforeMethod
 	public void setUp() throws InterruptedException
 	{
-//		System.setProperty("webdriver.gecko.driver", "/home/ranjeet/Downloads/geckodriver/");
-		System.setProperty("webdriver.chrome.driver", "/home/ranjeet/Downloads/chromedriver/");
+		System.setProperty("webdriver.gecko.driver", "/home/ranjeet/Downloads/geckodriver/");
+		//System.setProperty("webdriver.chrome.driver", "/home/ranjeet/Downloads/chromedriver/");
 		
-//		 driver=new FirefoxDriver();
-		driver=new ChromeDriver();
+		 driver=new FirefoxDriver();
+		//driver=new ChromeDriver();
 		driver.get("https://labapi.petbiotech.in/admin/");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("admin");
