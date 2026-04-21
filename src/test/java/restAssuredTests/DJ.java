@@ -35,7 +35,7 @@ public class DJ {
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("ev@pet123");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
-		System.out.println("hello");
+//		System.out.println("hello");
 		System.out.println("hello");
 	}
 	@Test(enabled=false)
